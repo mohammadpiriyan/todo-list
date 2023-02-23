@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>Document</title>
+  </head>
+  <body class="flex flex-col w-screen bg-dark-100">
+    <header class="py-8 px-4 max-w-[800px] w-full">
+      <h1 class="text-2xl font-bold mb-4 text-grayME">Mamad Task List</h1>
+
+      <form action="" id="new-task-form" class="flex">
+        <input
+          type="text"
+          id="new-task-input"
+          class="flex p-4 rounded-md mr-4 w-80 text-dark-300 font-semibold"
+          placeholder="what do you have planned?"
+        />
+        <input
+          type="submit"
+          id="new-task-submit"
+          class="text-grad p-4 rounded-md mr-4 font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pinkME to-purpleME cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+          value="Add task"
+        />
+      </form>
+    </header>
+
+    <main class="">
+      <section class="task-list p-4">
+        <h2 class="text-[1.5rem] font-bold text-grayME mb-4">Tasks</h2>
+
+        <div id="tasks">
+          <!-- <div
+            class="task flex justify-between bg-dark-300 p-4 rounded-lg mb-4"
+          >
+            <div class="content">
+              <input
+                type="text"
+                class="text bg-transparent disabled:text-lightME text-[1.125rem] w-full block text-pinkME"
+                value="My shiny task"
+                disabled
+              />
+            </div>
+            <div class="actions flex m-[0 -0.5rem] gap-4">
+              <button class="edit cursor-pointer m-[0 0.5rem] font-[700] hover:opacity-80 active:opacity-60 text-transparent bg-clip-text bg-gradient-to-r from-pinkME to-purpleME">Edit</button>
+              <button class="delete cursor-pointer m-[0 0.5rem] font-[700] hover:opacity-80 active:opacity-60 text-red-700">Delete</button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
